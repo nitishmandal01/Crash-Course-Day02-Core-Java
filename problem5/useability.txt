@@ -1,0 +1,17 @@
+Here's breakcdown of impact of changing access modifiers:-
+
+Data Security:
+1. Public : This is widely accessible. Any class can access the member of this. This offers minimal security and should be used cautiously. This is mostly used for Constants.
+
+2. Protected : This provides accessibolity within the same package. The subclass from other package also can access this. It offers a balanced security.
+
+3. Default : This offers accessibility only in same package. It provides a middle ground for data security within the package.
+
+4. Private : This is most secure and only accessible within class itself. It prevents access from other class or subclass. It provd
+
+Class Usability:
+
+Public: Class and its members can be accessed from anywhere in the program. Increases reusability but can lead to tight coupling between classes if not used carefully.
+Protected: Class can only be subclassed by classes in the same package or subclasses in other packages. Enforces a degree of control over who can use the class.
+Default (Package-private): Class can only be used by other classes within the same package. Promotes modularity and reduces complexity in large projects.
+Private: Class cannot be accessed from outside the current file. Useful for helper classes or internal utility classes that are not meant for external use.
